@@ -1,22 +1,82 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Mansalva&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Big+Shoulders+Display|Turret+Road|Vibes&display=swap');
 .App {
   text-align: center;
+  display: grid;
+  background-color:#185652;
 }
-
-.App-logo {
-  height: 40vmin;
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+p{
   color: white;
+  font-size: 50px;
+  font-family: 'Mansalva', cursive;
 }
+.nav{
+  height: 100px;
+}
+.op{
+  opacity: 0.2;
+}
+.linkItems{
+  font-size: 30px;
+  color: white;
+  font-family: "Montserrat",sans-serif;
+}
+.linkItems > .active {
+  /* border-bottom: 1px solid red; */
+  background-color: #fec503;
+  border-radius: 3px;
+  padding:10px 15px;
+  display: block;
+}
+.lorem1{
+  font-size: 30px;
+  color: white;
+  font-family: 'Turret Road', cursive;
+  text-align: justify;
+  padding: 50px;
+ 
+}
+.lorem2{
+  font-size: 30px;
+  color: white;
+  font-family: 'Big Shoulders Display', cursive;
+  text-align: justify;
+  padding: 50px;
+  
 
-.App-link {
-  color: #09d3ac;
 }
+.lorem3{
+  font-size: 30px;
+  color: white;
+  font-family: 'Vibes', cursive;
+  text-align: justify;
+  padding: 50px;
+  text-align: justify;
+  
+
+}
+@media only screen and (max-width: 600px) {
+  .App {
+    background-color:#185652; 
+  }
+  .lorem1{
+    font-size: 20px;
+    padding: 20px;
+    text-align: justify;
+  }
+  .lorem2{
+    font-size: 20px;
+    padding: 20px;
+    text-align: justify;
+  }
+  .lorem3{
+    font-size: 20px;
+    padding: 20px;
+    text-align: justify;
+  }
+  }
+
+
+
+
