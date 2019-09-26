@@ -165,7 +165,7 @@ class App extends Component {
       </Navbar.Collapse>
     </Navbar>
       <div onScroll={this.handleScroll}>
-      <div style={{paddingTop:"100px"}}><p>Hello</p></div>
+      <div style={{paddingTop:"100px"}}><p>Hello Zoha</p></div>
       <div>
       <Button variant="primary" size="lg" onClick={this.scrollItem}>
         Primary
@@ -232,6 +232,7 @@ class App extends Component {
     smooth={true}
     offset={-70}
     duration= {500}
+    onClick = {this.toggleExpandedFalse}
 >Section 2</Link>
             </div></Nav.Link>
 
@@ -245,6 +246,7 @@ class App extends Component {
     smooth={true}
     offset={-70}
     duration= {500}
+    onClick = {this.toggleExpandedFalse}
 >Section 3</Link>
             </div></Nav.Link>
           <Nav.Link ><div className="linkItems">
@@ -255,6 +257,7 @@ class App extends Component {
     smooth={true}
     offset={0}
     duration= {500}
+    onClick = {this.toggleExpandedFalse}
 >Contactus</Link>
             </div></Nav.Link>
             </Nav>
@@ -270,7 +273,7 @@ class App extends Component {
 
 
       <div onScroll={this.handleScroll}>
-      <div style={{paddingTop:"100px"}}><p>Hello</p></div>
+      <div style={{paddingTop:"100px"}}><p>Hello Zoha</p></div>
       <div>
       <Button variant="primary" size="lg" onClick={this.toggleExpanded}>
         Primary
