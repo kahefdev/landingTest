@@ -1,6 +1,5 @@
 {
   "name": "landingpage",
-  "homepage": "https://kahefdev.github.io/landingTest/git",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
@@ -16,6 +15,7 @@
     "react-scrollspy-nav": "^1.2.1",
     "smoothscroll-polyfill": "^0.4.4"
   },
+  "homepage": "https://kahefdev.github.io/landingTest/",
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
