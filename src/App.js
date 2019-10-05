@@ -6,9 +6,9 @@ import Ons from './Ons';
 import Lorem from './Lorem';
 import {Button,Navbar,Nav,} from 'react-bootstrap';
 import Footer from './Footer';
-
+import Test from './Test';
 import { Link, } from "react-scroll";
-
+import {add,dummyText}  from './Functions';
 
 
 
@@ -25,6 +25,12 @@ class App extends Component {
     
     }
   }
+
+  changeBG = (bg,variant) =>{
+
+    this.setState({bg:bg,variant:variant})
+  }
+
 
   toggleExpanded = () =>{
       this.state.expanded?this.setState({expanded:false}):this.setState({expand:true})
@@ -98,12 +104,23 @@ class App extends Component {
   onToggle = () =>{
     console.log('the navbar toggled')
   }
-  render(){
 
-      console.log(this.getDimensions());
+
+  render(){
+      console.log(add(1,2));
+    
       if(this.getDimensions()>700){
         return (
           <div className="App">
+
+
+
+
+            <Test changeBG = {this.scrollItem}/>
+
+
+
+
           <Navbar onToggle = {this.itToggled} bg={this.state.bg} variant={this.state.variant}  expand={this.state.expand} fixed="top" >
       <Navbar.Brand href="#home"><h1>React-Bootstrap</h1></Navbar.Brand>
       <Navbar.Toggle aria-controls="basic-navbar-nav" />
@@ -165,7 +182,7 @@ class App extends Component {
       </Navbar.Collapse>
     </Navbar>
       <div onScroll={this.handleScroll}>
-      <div style={{paddingTop:"100px"}}><p>Hello Zoha</p></div>
+      <div style={{paddingTop:"100px"}}><p>Hello </p></div>
       <div>
       <Button variant="primary" size="lg" onClick={this.scrollItem}>
         Primary
@@ -185,6 +202,8 @@ class App extends Component {
       <section style={{paddingTop:"50px"}} id = 'contactus'>
       <Footer />
       </section>
+
+      
 
       
 
